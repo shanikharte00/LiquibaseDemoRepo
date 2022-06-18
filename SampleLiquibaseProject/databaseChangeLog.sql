@@ -9,15 +9,12 @@ CREATE TABLE Persons (
     City varchar(255)
 );
 
---rollback drop table cmsadopt.cms_parameter
+--rollback drop table Persons
 
 --changeset DML:1
 INSERT INTO Persons
 (PersonID, LastName,FirstName, Address, City)
 VALUES(1, 'Koyale', 'Mayur', 'xyz', 'Mumbai');
---INSERT INTO cmsadopt.cms_parameter
---(param_code, param_name, param_value, param_desc, create_date, create_by, change_date, change_by)
---VALUES('BATCH_CONF_PRE_IMP_FILE', 'BATCH_CONF_PRE_IMP_FILE', '3', 'pre process import param', now(), 'System', NULL, NULL);
 
---rollback DELETE from cmsadopt.cms_parameter WHERE param_value = '3'
 
+--rollback DELETE from Persons 
