@@ -45,3 +45,6 @@ CREATE TABLE Employee (
 INSERT INTO Persons
 (PersonID, LastName,FirstName, Address, City)
 VALUES(3, 'More', 'Mohit', 'abc', 'pune');
+INSERT INTO Persons
+(PersonID, LastName,FirstName, Address, City)
+VALUES(4, 'Jadhav', 'Suraj', 'abc', 'pune');
