@@ -41,7 +41,3 @@ CREATE TABLE Employee (
 
 --rollback drop table Employee
 
---changeset DML:2
-INSERT INTO Persons
-(PersonID, LastName,FirstName, Address, City)
-VALUES(2, 'Tripathi', 'Mohit', 'abc', 'pune');
