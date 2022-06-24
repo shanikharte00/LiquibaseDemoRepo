@@ -9,7 +9,7 @@ CREATE TABLE Persons (
     City varchar(255)
 );
 
---rollback drop table Persons
+--rollback drop table Persons;
 
 --changeset DML:11
 INSERT INTO Persons
@@ -17,7 +17,7 @@ INSERT INTO Persons
 VALUES(1, 'Koyale', 'Mayur', 'xyz', 'Mumbai');
 
 
---rollback DELETE from Persons 
+--rollback DELETE from Persons;
 
 --changeset DDL:2
 CREATE TABLE Student (
@@ -28,7 +28,7 @@ CREATE TABLE Student (
     City varchar(255)
 );
 
---rollback drop table Student
+--rollback drop table Student;
 
 --changeset DDL:3
 CREATE TABLE Employee (
@@ -39,7 +39,7 @@ CREATE TABLE Employee (
     City varchar(255)
 );
 
---rollback drop table Employee
+--rollback drop table Employee;
 
 --changeset DML:21
 INSERT INTO Persons
@@ -48,3 +48,5 @@ VALUES(3, 'More', 'Mohit', 'abc', 'pune');
 INSERT INTO Persons
 (PersonID, LastName,FirstName, Address, City)
 VALUES(4, 'Jadhav', 'Suraj', 'abc', 'pune');
+
+--rollback DELETE from Persons;
